@@ -1,0 +1,210 @@
+/* Basic styling for the popup */
+.text-style-1 {
+    color:azure;
+}
+
+.pst-py-2 {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.pst-py-8 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pst-text-8 {
+    font-size: 32px;
+}
+
+.pst-justify-text {
+    white-space: normal;
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pst-single-card {
+    background: #ffff;
+    padding: 30px 0px;
+    -webkit-box-shadow: 0 8px 26px rgba(67,40,124,0.08);
+    border-radius: 8px;
+}
+
+.pst-md-text {
+    color:black;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    padding-right: 10px;
+}
+
+.pst-mx-50 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.pst-min-card {
+    height: 50px;
+    /* width: 184px; */
+    display: flex;
+    align-items: center; /* Vertical alignment */
+    justify-content: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.pst-min-card img {
+    display: block;
+    margin: auto; /* Center the image horizontally */
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.pst-round {
+    
+    border-radius: 300px;
+}
+
+.pst-background {
+    background-color: #8E8FFA;
+}
+
+
+/* Overall container styles */
+.privacy-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Section styles */
+.section {
+    margin-bottom: 30px;
+}
+
+/* Section title styles */
+.section-title {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Section description styles */
+.section-description {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.top-navbar{
+    background-color: #7752FE;
+    height: 100px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.marginx {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.ppheading {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.pstsearch{
+    /* position: relative; */
+    /* background-image: url(../img/hero/h1_hero.png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pstsearch form.search-box .input-form input {
+    height: 65px;
+    width: 100%;
+    color: #777777;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 9px 33px 9px 76px;
+    /* border: #190482; */
+    border-color: #190482;
+    border-width: 1px;
+    border-radius: 30px;
+    display: flex;
+   
+}
+
+.pstrel {
+    position: relative;
+}
+
+.pstable {
+    position: absolute;
+    left: 16px;
+    top: 8px;
+}
+
+.pstabri {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
+.pst-search-icon button{
+    background: #190482;
+    text-align: center;
+    color: #fff;
+    font-size: 21px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: block;
+    cursor: pointer;
+    line-height: 52px;
+    border: 0;
+}
+
+
+
+.pst-world i {
+    color: #c4c4c4;
+    font-size: 32px;
+    display: block;
+    line-height: 50px;
+}
+
+.pst-search-desc {
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin-top: 15px;
+padding-right: 15px;
+padding-left: 15px;
+
+}
+.pst-search-box{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+.pst-search-err{
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.pst-search-ld{
+    padding-top: 15px;
+    animation: blinker 2.0s linear infinite;
+    font-size: 20px;
+
+}
+
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
