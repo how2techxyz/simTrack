@@ -30,6 +30,10 @@ Route::get('/about-us', function () {
     return view('about-us');
 });
 
+Route::get('/ads.txt', function () {
+    return response()->file(public_path('ads.txt'));
+});
+
 // Route::get('/track', function () {
 //     return view('track');
 // });
