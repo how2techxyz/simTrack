@@ -85,17 +85,6 @@
                         <div class="col-xl-8 col-lg-9">
                             <!-- Hero Caption -->
                             <div class="hero__caption">
-                                <!-- Banner ad by adsterra -->
-                                <script type="text/javascript">
-                                    atOptions = {
-                                        'key' : 'd939fa9bd7f1c58731b3a79a5b329ff1',
-                                        'format' : 'iframe',
-                                        'height' : 90,
-                                        'width' : 728,
-                                        'params' : {}
-                                    };
-                                    document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/d939fa9bd7f1c58731b3a79a5b329ff1/invoke.js"></scr' + 'ipt>');
-                                </script>
                                 <h2 class=" pst-py-8 pst-text-8">Search any number</h2>
                                 <!-- <h3  class=" pst-py-8">Find people, Contact info, Background checks</h3> -->
                             </div>
@@ -165,8 +154,7 @@
                                 </ul>
                                <div class="">
                                  <!-- Native ad by adsterra -->
-                                <script async="async" data-cfasync="false" src="//pl22153211.toprevenuegate.com/21d5d1d42f09c404c1b45c217a4c3364/invoke.js"></script>
-                                <div id="container-21d5d1d42f09c404c1b45c217a4c3364"></div>
+                                <!-- <div id="container-21d5d1d42f09c404c1b45c217a4c3364"></div> -->
                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5740215782746766"
                                 crossorigin="anonymous"></script>
                             <ins class="adsbygoogle"

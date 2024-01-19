@@ -136,19 +136,6 @@ buttons.forEach(function(button) {
                             <div class="hero__caption">
                                 <h2 class="text-style-1 pst-py-8 pst-text-8">Leading Marketplace for local business</h2>
                                 <h3  class="text-style-1 pst-py-8">Find people, Contact info, Background checks</h3>
-                                <!-- popunder ad by adsterra -->
-                                <script type='text/javascript' src='//pl22149529.toprevenuegate.com/b3/34/33/b334335d4d0769fbc66aa9ec3e8312f1.js'></script>
-                                <!-- banner ad by adsterra -->
-                                <script type="text/javascript">
-                                    atOptions = {
-                                        'key' : 'd939fa9bd7f1c58731b3a79a5b329ff1',
-                                        'format' : 'iframe',
-                                        'height' : 90,
-                                        'width' : 728,
-                                        'params' : {}
-                                    };
-                                    document.write('<scr' + 'ipt type="text/javascript" src="//www.topcreativeformat.com/d939fa9bd7f1c58731b3a79a5b329ff1/invoke.js"></scr' + 'ipt>');
-                                </script>
                                 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5740215782746766"
                                     crossorigin="anonymous"></script>
                                 <ins class="adsbygoogle"
