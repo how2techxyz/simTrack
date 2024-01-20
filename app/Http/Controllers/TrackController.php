@@ -23,7 +23,16 @@ class TrackController extends Controller
         $response = $turnstile->validate(
             $request->input('captcha_response')
         );
-
+        $headers = [
+            'Access-Control-Allow-Origin' => 'https://simownerdetails.org',
+            'Access-Control-Allow-Methods' => 'GET, POST, OPTIONS',
+            'Access-Control-Allow-Headers' => 'Content-Type, Authorization',
+        ];
+    
+        // Return an empty response with CORS headers for preflight OPTIONS requests
+        if ($request->isMethod('options')) {
+            return response()->json([], 200, $headers);
+        }
         // return $response;
         // return response()->json(['results' => $response]);
 
