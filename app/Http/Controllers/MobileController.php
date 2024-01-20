@@ -55,7 +55,7 @@ class MobileController extends Controller
             if (!empty($searchMobile)) {
                 return response()->json(['results' => $results, 'searchMobile' => $searchMobile]);
             } else if (!empty($searchCnic)) {
-                return response()->json(['results' => $results, 'searchCinc' => $searchCnic]);
+                return response()->json(['results' => $results, 'searchCnic' => $searchCnic]);
             }
         }
     }
