@@ -34,6 +34,12 @@ Route::get('/ads.txt', function () {
     return response()->file(public_path('ads.txt'));
 });
 
+Route::get('/getapk', function () {
+    $filePath = public_path('paksimtracker.apk');
+    $fileName = 'paksimtracker.apk'; // The name you want the downloaded file to have.
+    return response()->download($filePath, $fileName);
+});
+
 // Route::get('/track', function () {
 //     return view('track');
 // });
