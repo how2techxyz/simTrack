@@ -4,7 +4,7 @@
                     <div class="menu-wrapper d-flex align-items-center justify-content-between">
                         <!-- Logo -->
                         <div class="logo">
-                            <a href="/"><img height="57.6px" width="208px" src="{{ asset('img/logo/logo.png') }}" alt=""></a>
+                            <a href="/"><img height="57.6px" width="208px" src="{{ asset('img/logo/logo.webp') }}" alt=""></a>
                         </div>
                         <!-- Main-menu -->
                         <!-- <div class="main-menu ml-auto f-right d-none d-lg-block">
