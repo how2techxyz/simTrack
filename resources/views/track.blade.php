@@ -126,23 +126,6 @@
                                         </button> -->
                                     
                             </form>	
-                            <script>
-    // Get your form element
-    var form = document.getElementById('searchForm');
-    
-    // Add event listener for the 'submit' event
-    form.addEventListener('submit', function(event) {
-        // Check if window.captchaToken is undefined
-        if (window.captchaToken === undefined) {
-            // Prevent the form from submitting
-            event.preventDefault();
-            
-            // Show an alert to the user
-            alert('Please solve the captcha first.');
-        }
-        // If window.captchaToken is not undefined, the form will proceed with the submission
-    });
-</script>
                         <script>
                            document.addEventListener('DOMContentLoaded', function() {
         // Get the search number from the URL query parameter
@@ -256,8 +239,8 @@
         $('#searchForm').submit(function(e) {
             e.preventDefault(); // Prevent the form from submitting normally
             function resetCaptcha() {
-    const captchaContainer = document.querySelector('#captcha-container');
-    captchaContainer.innerHTML = ''; // Clears the content inside the container
+            const captchaContainer = document.querySelector('#captcha-container');
+             captchaContainer.innerHTML = ''; // Clears the content inside the container
 
     // Re-render the captcha using turnstile.render
     turnstile.render('#captcha-container', {
@@ -277,6 +260,10 @@
 // // Make AJAX request here    
 
 // });
+if (window.captchaToken === undefined) {
+    alert('Please solve the captcha first.');
+    return;
+}
 const mobilePattern = /^\d{10,11}$/
             var searchMobile = $('#search_mobile').val();
             if (!mobilePattern.test(searchMobile)) {
