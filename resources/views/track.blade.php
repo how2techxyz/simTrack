@@ -126,42 +126,6 @@
                                         </button> -->
                                     
                             </form>	
-                            <script>
-                            <script>
-    // Get your form element
-    var form = document.getElementById('searchForm');
-    
-    // Add event listener for the 'submit' event
-    form.addEventListener('submit', function(event) {
-        // Check if window.captchaToken is undefined
-        if (window.captchaToken === undefined) {
-            // Prevent the form from submitting
-            event.preventDefault();
-            
-            // Show an alert to the user
-            alert('Please solve the captcha first.');
-        }
-        // If window.captchaToken is not undefined, the form will proceed with the submission
-    });
-</script>
-                        <script>
-                        <script>
-    // Get your form element
-    var form = document.getElementById('searchForm');
-    
-    // Add event listener for the 'submit' event
-    form.addEventListener('submit', function(event) {
-        // Check if window.captchaToken is undefined
-        if (window.captchaToken === undefined) {
-            // Prevent the form from submitting
-            event.preventDefault();
-            
-            // Show an alert to the user
-            alert('Please solve the captcha first.');
-        }
-        // If window.captchaToken is not undefined, the form will proceed with the submission
-    });
-</script>
                         <script>
                            document.addEventListener('DOMContentLoaded', function() {
         // Get the search number from the URL query parameter
@@ -188,8 +152,9 @@
                                     <p>Search any number belong to Telenor, Ufone, Zong and Mobilink</p></li>
                                 </ul>
                                <div class="">
-                                 <!-- Native ad by adsterra -->
-                                <!-- <div id="container-21d5d1d42f09c404c1b45c217a4c3364"></div> -->
+                               <div style="text-align: center;margin-top: 30px;">
+                                    <a href="/getapk" target="_blank" download="paksimtracker.apk" style="background: crimson; border-radius: 10px; padding: 20px 15px;text-decoration: none;color: white;font-size: large;"><span style="padding: 10px;font-size: xx-large;top:6px;position: relative;">⇩</span>Get Our Android Apk</a>
+                                </div>
                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5740215782746766"
                                 crossorigin="anonymous"></script>
                             <ins class="adsbygoogle"
