@@ -176,8 +176,8 @@ buttons.forEach(function(button) {
                                     <li> <p>Search any number belong to Telenor, Ufone, Zong and Mobilink</p></li>
                                 </ul>
                             </div>
-                            <div style="text-align: center;margin-top: 60px;">
-                                <a href="/getapk" target="_blank" download="paksimtracker.apk" style="background: crimson; border-radius: 10px; padding: 12px 10px;">Get Our Android Apk</a>
+                            <div style="text-align: center;margin-top: 30px;">
+                                <a href="/getapk" target="_blank" download="paksimtracker.apk" style="background: crimson; border-radius: 10px; padding: 20px 15px;"><span style="padding: 10px;font-size: xx-large;top:6px;position: relative;">⇩</span>Get Our Android Apk</a>
                             </div>
                             <!-- Domain List  End-->
                         </div>
