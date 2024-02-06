@@ -260,7 +260,7 @@ buttons.forEach(function(button) {
                         <img  height="50px" width="80px" src="{{ asset('img/gallery/ufone.png') }}" alt="">
                     </div>
                     <div class=" pst-min-card">
-                        <img  height="50px" width="100px"  src="{{ asset('img/gallery/onic.jpg') }}" alt="">
+                        <img  height="50px" width="100px"  src="{{ asset('img/gallery/onic.webp') }}" alt="">
                     </div>
                     <div class=" pst-min-card">
                         <img  height="50px" width="80px"  src="{{ asset('img/gallery/telenor.svg') }}" alt="">
