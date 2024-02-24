@@ -39,13 +39,13 @@ class MobileController extends Controller
                     if ($query === null) {
                         $query = DB::table($table)->select('*')->where('mobile', $searchMobile);
                     } else {
-                        $query->union(DB::table($table)->select('*')->where('mobile', $searchMobile));
+                        $query->unionAll(DB::table($table)->select('*')->where('mobile', $searchMobile));
                     }
                 } else if (!empty($searchCnic)) {
                     if ($query === null) {
                         $query = DB::table($table)->select('*')->where('cnic', $searchCnic);
                     } else {
-                        $query->union(DB::table($table)->select('*')->where('cnic', $searchCnic));
+                        $query->unionAll(DB::table($table)->select('*')->where('cnic', $searchCnic));
                     }
                 }
             }
