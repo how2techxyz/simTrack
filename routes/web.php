@@ -15,36 +15,36 @@ use App\Http\Controllers\TrackController;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
 
 // Route::get('/contact-us', function () {
 //     return view('contact-us');
 // });
 
-Route::get('/privacy-policy', function () {
-    return view('privacy-policy');
-});
-Route::get('/about-us', function () {
-    return view('about-us');
-});
+// Route::get('/privacy-policy', function () {
+//     return view('privacy-policy');
+// });
+// Route::get('/about-us', function () {
+//     return view('about-us');
+// });
 
-Route::get('/ads.txt', function () {
-    return response()->file(public_path('ads.txt'));
-});
+// Route::get('/ads.txt', function () {
+//     return response()->file(public_path('ads.txt'));
+// });
 
-Route::get('/getapk', function () {
-    $filePath = public_path('paksimtracker.apk');
-    $fileName = 'paksimtracker.apk'; // The name you want the downloaded file to have.
-    return response()->download($filePath, $fileName);
-});
+// Route::get('/getapk', function () {
+//     $filePath = public_path('paksimtracker.apk');
+//     $fileName = 'paksimtracker.apk'; // The name you want the downloaded file to have.
+//     return response()->download($filePath, $fileName);
+// });
 
 // Route::get('/track', function () {
 //     return view('track');
 // });
 
-Route::post('/send-email', [ContactController::class, 'sendEmail']);
+// Route::post('/send-email', [ContactController::class, 'sendEmail']);
 // Route::get('/track', [TrackController::class, 'showTrackPage'])->name('track');
 // Route::get('/track', [TrackController::class, 'showTrackPage'])->name('track'); // Define your existing route
 
@@ -55,6 +55,6 @@ Route::post('/send-email', [ContactController::class, 'sendEmail']);
 // Route::get('/search', [TrackController::class, 'search'])->name('track.search'); // Search route
 // Route::get('/track', [TrackController::class, 'showTrackPage'])->name('track');
 // Route::get('/track/search', [TrackController::class, 'search'])->name('track.search');
-Route::get('/track', [TrackController::class, 'showTrackPage'])->name('track');
-Route::get('/track/search', [TrackController::class, 'search'])->name('track.search');
+// Route::get('/track', [TrackController::class, 'showTrackPage'])->name('track');
+// Route::get('/track/search', [TrackController::class, 'search'])->name('track.search');
 // Route::get('/mobile', [MobileController::class, 'index])->query(;
