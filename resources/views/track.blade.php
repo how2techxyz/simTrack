@@ -126,7 +126,6 @@
                                         </button> -->
                                     
                             </form>	
-                            
                         <script>
                            document.addEventListener('DOMContentLoaded', function() {
         // Get the search number from the URL query parameter
@@ -153,8 +152,9 @@
                                     <p>Search any number belong to Telenor, Ufone, Zong and Mobilink</p></li>
                                 </ul>
                                <div class="">
-                                 <!-- Native ad by adsterra -->
-                                <!-- <div id="container-21d5d1d42f09c404c1b45c217a4c3364"></div> -->
+                               <div style="text-align: center;margin-top: 30px;">
+                                    <a href="/getapk" target="_blank" download="paksimtracker.apk" style="background: crimson; border-radius: 10px; padding: 20px 15px;text-decoration: none;color: white;font-size: large;"><span style="padding: 10px;font-size: xx-large;top:6px;position: relative;">⇩</span>Get Our Android Apk</a>
+                                </div>
                                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5740215782746766"
                                 crossorigin="anonymous"></script>
                             <ins class="adsbygoogle"
@@ -239,8 +239,8 @@
         $('#searchForm').submit(function(e) {
             e.preventDefault(); // Prevent the form from submitting normally
             function resetCaptcha() {
-    const captchaContainer = document.querySelector('#captcha-container');
-    captchaContainer.innerHTML = ''; // Clears the content inside the container
+            const captchaContainer = document.querySelector('#captcha-container');
+             captchaContainer.innerHTML = ''; // Clears the content inside the container
 
     // Re-render the captcha using turnstile.render
     turnstile.render('#captcha-container', {
@@ -260,6 +260,10 @@
 // // Make AJAX request here    
 
 // });
+if (window.captchaToken === undefined) {
+    alert('Please solve the captcha first.');
+    return;
+}
 const mobilePattern = /^\d{10,11}$/
             var searchMobile = $('#search_mobile').val();
             if (!mobilePattern.test(searchMobile)) {
