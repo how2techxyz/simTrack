@@ -6,16 +6,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use DerekCodes\TurnstileLaravel\TurnstileLaravel;
 
-
 class MobileController extends Controller
 {
     public function index(Request $request)
-    
     {
         $turnstile = new TurnstileLaravel;
         $response = $turnstile->validate(
             $request->input('captcha_response')
         );
+
         if ($response['status'] == true) {
             $searchMobile = $request->input('query');
             $searchMobile = ltrim($searchMobile, '0');
@@ -53,10 +52,37 @@ class MobileController extends Controller
             $results = $query->get();
 
             if (!empty($searchMobile)) {
-                return response()->json(['results' => $results, 'searchMobile' => $searchMobile]);
+                if ($results->isEmpty()) {
+                    // If no results found in the database, send request to another API
+                    $externalData = $this->fetchDataFromExternalAPI($searchMobile);
+                    return response()->json(['results' => $externalData, 'searchMobile' => $searchMobile]);
+                } else {
+                    return response()->json(['results' => $results, 'searchMobile' => $searchMobile]);
+                }
             } else if (!empty($searchCnic)) {
                 return response()->json(['results' => $results, 'searchCnic' => $searchCnic]);
             }
+        }
+    }
+
+    private function fetchDataFromExternalAPI($mobileNumber)
+    {
+        $formData = http_build_query([
+            'action' => 'get_number_data',
+            'get_number_data' => 'searchdata=' . $mobileNumber
+        ]);
+
+        try {
+            $response = file_get_contents('https://simownerdetails.pk/wp-admin/admin-ajax.php', false, stream_context_create([
+                'http' => [
+                    'method' => 'POST',
+                    'header' => "Content-type: application/x-www-form-urlencoded\r\n",
+                    'content' => $formData
+                ]
+            ]));
+            return json_decode($response, true);
+        } catch (\Exception $e) {
+            return ['error' => 'An error occurred while fetching data from the external API.'];
         }
     }
 }
