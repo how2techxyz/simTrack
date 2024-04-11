@@ -13,7 +13,7 @@ class MobileController extends Controller
     {
         $turnstile = new TurnstileLaravel;
         $response = $turnstile->validate($request->input('captcha_response'));
-        if ($response['status'] == false) {
+        if ($response['status'] == true) {
             $searchMobile = $this->sanitizeInput($request->input('query'));
             $searchCnic = $request->input('search_cnic');
 
